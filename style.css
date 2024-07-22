@@ -1,0 +1,399 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: url('./utils/network.jpg') no-repeat;
+  background-size: cover;
+}
+
+.body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height:92vh;
+  width: 85%;
+  margin: 2rem auto;
+  border-radius: 2px;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.nav_bar {
+  display: flex;
+  font-weight: 600;
+}
+
+.nav_home{
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+.nav_bar .nav_logo {
+  position: fixed;
+  color: white;
+  cursor: pointer;
+}
+
+.nav_bar ul {
+  position: absolute;
+  display: flex;
+  left: 48%;
+  transform: translateX(-50%);
+}
+
+.nav_bar ul li {
+  list-style-type: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav_bar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_toggle {
+  position: absolute;
+  left: -10%;
+}
+
+.nav_toggle i {
+  color: #000428;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.home {
+  color: white;
+}
+
+.home_img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_img img {
+  width: 250px;
+  height: 320px;
+  margin-top: 10px;
+  border: 5px solid white;
+  border-radius: 100%;
+}
+
+.home_class {
+  display: flex;
+}
+
+.line {
+  background-color: white;
+  width: 3px;
+  height: auto;
+  color: white;
+  margin-top: 9px;
+}
+
+.home_detail {
+  margin-left: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.home_class .name {
+  font-size: 38px;
+}
+
+.home_class .aspiring {
+  font-size: 23px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.profile i {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.profile a{
+  color: white;
+  text-decoration: none;
+}
+
+.profile a:hover{
+  color: aquamarine;
+}
+
+.about {
+  margin-top: 100rem;
+}
+
+.about_img img {
+  width: 400px;
+  height: 310px;
+  margin-top: 10px;
+}
+
+.about_heading {
+  text-align: center;
+  color :aliceblue;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.about_para {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  color: white;
+  margin-left: 30px;
+}
+
+.skills {
+  margin-top: 10rem;
+}
+
+.skills_img img{
+  width: 310px;
+  height: 310px;
+  margin-top: 10px;
+}
+
+.skills_details{
+  position: relative;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.skills_heading{
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+}
+
+.carousel-inner{
+  position: relative !important;
+}
+
+.carousel-item{
+  height: 40vh;
+  width: 100%;
+  position: relative !important;
+  left:55%;
+  top: 0;
+  transform: translateX(-50%);
+  padding: 10px;
+  font-size: 14px;
+  transition: 1s;
+  color: white;
+}
+
+.project{
+    margin-top: 1000px
+}
+
+.project_card {
+  position: relative;
+  height: 80px;
+  width: auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project_card img{
+  height: 50px;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+
+.project_card:hover {
+  transform: translateY(-5px);
+}
+
+.desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  width: 90%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.project_card:hover .desc {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.project_img{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project_img img{
+  width: 400px;
+  height: 320px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.contact_form{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact_form div{
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact_form form input{
+  padding: 5px;
+  outline: none;
+  border: none;
+  background-color: white;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.contact_form form input::placeholder{
+  color:darkcyan;
+  font-size: 14px;
+}
+
+.contactme{
+  color: white;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  padding: 4px;
+  background-color: #093637;
+  border-radius: 3px;
+}
+
+.contact_form form textarea{
+  padding: 6px;
+  outline: none;
+  border: none;
+  background-color: white;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px; 
+}
+
+.contact_form form textarea::placeholder{
+  color:darkcyan;
+  font-size: 14px;
+}
+
+.contact_form form button{
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: #093637;
+  padding: 6px;
+}
+
+.contact_form form button:hover{
+  background-color:#093637;
+  color: white;
+}
+
+.alerting{
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 5px;
+  display: none;
+}
+
+.modal-pop1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 550px;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+  padding: 10px;
+  box-shadow: 1px 2px 50px black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.experience-heading{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-pop1 li{
+  text-align: justify;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.modal-pop2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 550px;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+  padding: 10px;
+  box-shadow: 1px 2px 50px black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.modal-pop2 li{
+  text-align: justify;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.certificate-name{
+  text-align: center;
+  margin-top: 5px;
+}

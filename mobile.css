@@ -1,0 +1,234 @@
+@media only screen and (min-width: 768px) and (max-width: 900px) and (orientation: portrait) {
+  .body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 0;
+    overflow-x: hidden;
+    padding: 0;
+    background: url('./utils/network.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .nav_bar ul {
+    margin-top: -100px;
+  }
+
+  .home_img img {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .contact_form {
+    position: relative;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+
+  .project-para {
+    margin-left: 30px;
+  }
+
+  .project_img img{
+    width: 320px;
+    height: 190px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 0;
+    overflow-x: hidden;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .nav_bar {
+    display: block;
+    font-weight: 600;
+  }
+
+  .nav_bar .nav_logo {
+    color: white;
+  }
+
+  .mobile_nav {
+    z-index: 100;
+    height: 30vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: -50%;
+    background-color: #093637;
+  }
+
+  .nav_bar ul {
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: 3%;
+    transform: translateX(-50%);
+  }
+
+  .nav_bar ul li {
+    transition: 1s ease-in-out;
+    text-align: center;
+    list-style-type: none;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .nav_bar ul li:hover{
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 6px;
+    width: 200px;
+  }
+
+  .nav_bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600 !important;
+  }
+
+  .nav_bar ul li a:hover{
+    color: #093637;
+  }
+
+  .nav_toggle {
+    position: absolute;
+    left: 92%;
+    bottom: 1%;
+    z-index: 1000;
+  }
+
+  .nav_toggle i {
+    margin-top: 10px;
+    font-size: 22px;
+    color: white;
+  }
+
+  .nav_home{
+    display: block;
+    left: 90%;
+    top: 10%;
+  }
+
+  .nav_home i{
+    color: white;
+    font-size: 20px;
+  }
+
+  .nav_home i:hover{
+    color: aquamarine;
+  }
+
+  .home_img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about_para {
+    text-align: justify;
+    color: white;
+    margin-left: 0px;
+  }
+
+  .about_img img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+  }
+
+  .skills_details {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .carousel-item {
+    height: 28vh;
+    width: 90%;
+    position: relative !important;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 14px;
+    transition: 1s ease-in-out;
+    color: white;
+  }
+
+  .modal-pop1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    padding: 10px;
+    box-shadow: 1px 2px 50px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .experience-heading{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .modal-pop1 li{
+    text-align: justify;
+    margin-top: 10px;
+    opacity: 0.9;
+  }
+  
+  .modal-pop2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    padding: 10px;
+    box-shadow: 1px 2px 50px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  .modal-pop2 li{
+    text-align: justify;
+    margin-top: 10px;
+    opacity: 0.9;
+  }
+}
+
